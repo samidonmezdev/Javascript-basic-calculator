@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript Basic Calculator-Sami dönmez</title>
+</head>
+<body style="margin:10%;padding:5%;border:5px solid black;">
+<form>
+<div style="padding:2%;margin=5%;border:1px solid black;">
+<div>
+<span>Number 1:</span>
+<input type="number" id="n1">
+</div>
+<div>
+<span>Number 2:</span>
+<input type="number" id="n2" >
+</div>
+</div>
+
+<div style="padding:2%;margin=5%;border:1px solid black;">
+<button type="button" onclick="myFunction()">+</button>
+<button type="button" onclick="myFunction1()">-</button>
+<button type="button" onclick="myFunction2()">*</button>
+<button type="button" onclick="myFunction3()">/</button>
+</div>
+</form>
+<p id="demo" style="border:2px solid black">0</p>
+<script>
+function myFunction() {//addition
+var t1 = document.getElementById("n1").value;
+var t2 = document.getElementById("n2").value;
+var p1 = parseInt(t1, 10);
+var p2 = parseInt(t2, 10);
+ document.getElementById('demo').innerHTML =p1+p2;
+}
+function myFunction1() {//subtraction
+var t1 = document.getElementById("n1").value;
+var t2 = document.getElementById("n2").value;
+var p1 = parseInt(t1, 10);
+var p2 = parseInt(t2, 10);
+ document.getElementById('demo').innerHTML =p1-p2;
+}
+function myFunction2() {
+//multiplication
+var t1 = document.getElementById("n1").value;
+var t2 = document.getElementById("n2").value;
+var p1 = parseInt(t1, 10);
+var p2 = parseInt(t2, 10);
+ document.getElementById('demo').innerHTML =p1*p2;
+}
+function myFunction3() {
+//division
+var t1 = document.getElementById("n1").value;
+var t2 = document.getElementById("n2").value;
+var p1 = parseInt(t1, 10);
+var p2 = parseInt(t2, 10);
+ document.getElementById('demo').innerHTML = p1/p2;
+}
+</script>
+</body>
+</html> 
